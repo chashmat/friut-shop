@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><u>Welcome To Fruit Shop</u></h1>
+    <div id="main">
+        <div id="moneyDiv">
+            <input type="number" name="money" class="money" id="money" autofocus>
+            <label for="money" id="l-money">Money:</label>
+            <button onclick="btnAdd()" id="add-btn">Add</button>
+        </div>
+        <div class="figure">
+            <section style="display: table;">
+                <img src="images/Green-Apple.jpg" alt="Apple">
+                <br>
+                <span style="padding-right: 5px;">Apple:</span>
+                    <button onclick="btnAppleP()">+</button>
+                    <input type="number" name="appleQuantity" id="appleQuantity" value="0">
+                    <button class="btnM" onclick="btnAppleM()">-</button>
+                    <br>
+                    <p style="display: inline-block; margin: 0; padding-top: 10px;">price of Apple Rs10.</p>
+            </section>
+            <section style="display: table;" id="section2">
+                <img src="images/Mango.jpg" alt="Apple">
+                <br>
+                <span style="padding-right: 5px;">Mango:</span>
+                <button onclick="btnMangoP()">+</button>
+                <input type="number" name="mangoQuantity" id="mangoQuantity" value="0">
+                <button class="btnM" onclick="btnMangoM()">-</button>
+                <br>
+                <p style="display: inline-block; margin: 0; padding-top: 10px;">price of Mango Rs15.</p>
+            </section>
+            <section style="display: table;" id="section3">
+                <img src="images/Cherry.jpg" alt="Apple">
+                <br>
+                <span style="padding-right: 5px;">Cherry:</span>
+                <button onclick="btnCherryP()">+</button>
+                <input type="number" name="cherryQuantity" id="cherryQuantity" value="0">
+                <button class="btnM" onclick="btnCherryM()">-</button>
+                <br>
+                <p style="display: inline-block; margin: 0; padding-top: 10px;">price of Cherry Rs7.</p>
+            </section>
+        </div>
+        <div id="count1">
+            <div  id="count2">
+                <h3>Total:  <span id="totalValue">0</span><span>Rs</span></h3>
+                <hr style="margin-left: -16px;">
+                <h3>Balance:  <span id="balanceValue">0</span><span>Rs</span></h3>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

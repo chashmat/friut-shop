@@ -1,0 +1,177 @@
+*{
+    font-family: sans-serif;
+    color: white;
+    cursor: context-menu;
+}
+h1{
+    text-align: center;
+}
+body{
+    background: url(images/background.jpg);
+    background-size: cover;
+}
+
+#main{
+    margin: auto;
+    margin-top: 2%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    height: 85vh;
+}
+
+#moneyDiv{
+    margin-left: 43%;
+    margin-top: 25px;
+    display: inline-block;
+}
+
+#moneyDiv label {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    position: relative;
+    top: -17px;
+    left: -175px;
+    font-stretch: extra-expanded;
+    cursor: pointer;
+}
+img{
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 200px;
+    min-height: 200px;
+}
+section p{
+    display: inline-block;
+}
+section{
+    background-color: rgba(0, 0, 0, 0.8);
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+}
+p{
+    text-decoration: none;
+    text-align: center;
+    padding: 0px;
+    margin: 0px 0px 0px 177%;
+}
+.figure{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+input {
+    border-bottom: 2px solid #ffffff;
+    border-right: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    background: transparent;
+    transition: all .45s;
+    outline: none;
+}
+input:focus{
+    border-bottom: 2px solid rgb(42, 127, 255);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background: transparent;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.figure input{
+    width: 30px;
+    border: 1px solid white;
+}
+.figure input:focus{
+    border: 1px solid rgb(42, 127, 255);
+}
+button{
+    cursor: pointer;
+    transition: all 0.5s;
+    background: transparent;
+    border: 1px solid white;
+    outline: none;
+}
+button:active{
+    color: rgb(42, 127, 255);
+    border: 1px solid rgb(42, 127, 255);
+}
+.btnM{
+    padding: 1px 8px;
+}
+#count1{
+    display: flex;
+    justify-content: space-evenly;
+}
+#count2{
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    width: 300px;
+    padding-left: 16px;
+    margin-top: 50px;
+}
+h3{
+    transition: all .5s;
+}
+h3:hover{
+    color: rgb(42, 127, 255);
+}
+h3 span{
+    transition: all.5s;
+}
+h3 span:hover{
+    color: rgb(42, 127, 255);
+}
+input{
+    cursor: auto;
+}
+@media (max-width: 1109px){
+    #main{
+        height: 95vh;
+    }
+}
+@media (max-width: 645px){
+    #section3{
+        margin-top: 25px;
+    }
+    #main{
+        height: 155vh;
+    }
+}
+@media (max-width: 435px){
+    #section2{
+        margin-top: 25px;
+    }
+    #add-btn{
+        margin-top: 5px;
+    }
+    #main{
+        height: 210vh;
+    }
+}
+@media (max-width: 407px){
+    #add-btn{
+        margin-left: -49px;
+    }
+    #l-money{
+        margin-left: 127px;
+    }
+}
+@media (max-width: 310px){
+    #moneyDiv{
+        margin-left: 24%;
+    }
+}
+@media (max-width: 233px){
+    #moneyDiv input{
+        width: 1%;
+    }
+    #main{
+        height: 214vh;
+    }
+}
